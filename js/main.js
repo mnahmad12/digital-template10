@@ -202,7 +202,7 @@ window.onload = function() {
 		
 			this.timer = this.game.time.create(this.game);
 			this.resurrect();
-			this.game.time.events.repeat(Phaser.Timer.SECOND*this.rnd.integerInRange(1, 3),15, this.resurrect,this );
+			this.game.time.events.repeat(Phaser.Timer.SECOND*this.rnd.integerInRange(.25, .75),15, this.resurrect,this );
 		},
 	
 		Bed: function(fullStatus,x,y)
